@@ -102,7 +102,7 @@ try:
             print(
                 f"🛒 Sent → topic={record_metadata.topic} "
                 f"partition={record_metadata.partition} "
-                f"offset={record_metadata.offset}"
+                f"offset={record_metadata.offset}"  # offset: número de posición de un mensaje dentro de un topic
             )
         except KafkaError as e:
             print(f"❌ Error sending message: {e}")

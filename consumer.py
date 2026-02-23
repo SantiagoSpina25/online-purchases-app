@@ -18,6 +18,8 @@ es = Elasticsearch("http://localhost:9200")
 
 INDEX_NAME = "online-purchases"
 
+required_fields = ["order_id", "product", "category", "price", "quantity", "timestamp"]
+
 print("🟢 Consumer escuchando...")
 
 try:
@@ -25,6 +27,9 @@ try:
     for msg in consumer:
 
         purchase = msg.value  # dict ya parseado
+
+        if not all(fields in purchase for fields in required_fields):
+            continue
 
         if "country" not in purchase:
             purchase["country"] = "Unknown"
