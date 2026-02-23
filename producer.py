@@ -2,19 +2,22 @@ import json
 import random
 import time
 import uuid
-from datetime import datetime
+from datetime import datetime, timezone
 
 from kafka import KafkaProducer
 from kafka.errors import KafkaError
 
 TOPIC = "online_purchases"
 
+# Configuración de Kafka
 producer = KafkaProducer(
     bootstrap_servers="localhost:9092",
-    value_serializer=lambda v: json.dumps(v).encode("utf-8"),
-    acks="all",
-    retries=5,
-    linger_ms=10,
+    value_serializer=lambda v: json.dumps(v).encode(
+        "utf-8"
+    ),  # Convierte el diccionario de Python en bytes de JSON, que Kafka puede enviar
+    acks="all",  # asegura que el mensaje llegó y fue replicado
+    retries=5,  # si falla el envío, reintenta hasta 5 veces antes de tirar error
+    linger_ms=10,  # espera hasta 10 milisegundos para agrupar varios mensajes antes de enviarlos
 )
 
 products = [
@@ -34,11 +37,11 @@ try:
 
         purchase = {
             "order_id": str(uuid.uuid4()),
-            "timestamp": datetime.utcnow().isoformat(),
+            "timestamp": datetime.now(timezone.utc).isoformat(),
             "user_id": random.randint(1, 100),
             "product": product,
             "category": category,
-            "price": round(base_price * random.uniform(0.8, 1.2), 2),
+            "price": round(base_price * random.uniform(0.5, 1.5), 2),
             "quantity": random.randint(1, 3),
         }
 
@@ -54,12 +57,12 @@ try:
         except KafkaError as e:
             print(f"❌ Error sending message: {e}")
 
-        time.sleep(5)
+        time.sleep(random.randint(1, 3))
 
 except KeyboardInterrupt:
     print("🛑 Stopping producer...")
 
 finally:
-    producer.flush()
+    producer.flush()  # fuerza al producer a enviar todo lo que está en memoria antes de continuar
     producer.close()
     print("✅ Producer closed cleanly")
