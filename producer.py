@@ -21,12 +21,61 @@ producer = KafkaProducer(
 )
 
 products = [
+    # Electronics
     ("Laptop", "Electronics", 900),
     ("Phone", "Electronics", 600),
     ("Headphones", "Electronics", 150),
+    ("Monitor", "Electronics", 300),
+    ("Tablet", "Electronics", 400),
+    ("Smartwatch", "Electronics", 250),
+    ("Camera", "Electronics", 700),
+    # Gaming
     ("Keyboard", "Gaming", 120),
     ("Mouse", "Gaming", 80),
-    ("Monitor", "Electronics", 300),
+    ("Gaming Chair", "Gaming", 350),
+    ("Console", "Gaming", 500),
+    ("VR Headset", "Gaming", 400),
+    # Home Appliances
+    ("Coffee Maker", "Home Appliances", 100),
+    ("Blender", "Home Appliances", 70),
+    ("Vacuum Cleaner", "Home Appliances", 200),
+    ("Air Fryer", "Home Appliances", 150),
+    # Fashion
+    ("T-Shirt", "Fashion", 25),
+    ("Jeans", "Fashion", 60),
+    ("Sneakers", "Fashion", 120),
+    ("Jacket", "Fashion", 150),
+    # Books
+    ("Novel", "Books", 20),
+    ("Cookbook", "Books", 35),
+    ("Comic Book", "Books", 15),
+    # Sports
+    ("Tennis Racket", "Sports", 120),
+    ("Football", "Sports", 30),
+    ("Yoga Mat", "Sports", 40),
+]
+
+countries = [
+    "ESP",  # Spain
+    "ARG",  # Argentina
+    "USA",  # United States
+    "BRA",  # Brazil
+    "FRA",  # France
+    "DEU",  # Germany
+    "ITA",  # Italy
+    "GBR",  # United Kingdom
+    "PRT",  # Portugal
+    "MEX",  # Mexico
+    "CHL",  # Chile
+    "COL",  # Colombia
+    "PER",  # Peru
+    "URY",  # Uruguay
+    "CAN",  # Canada
+    "JPN",  # Japan
+    "CHN",  # China
+    "KOR",  # South Korea
+    "AUS",  # Australia
+    "NZL",  # New Zealand
 ]
 
 print("🚀 Producer started")
@@ -43,6 +92,7 @@ try:
             "category": category,
             "price": round(base_price * random.uniform(0.5, 1.5), 2),
             "quantity": random.randint(1, 3),
+            "country": random.choice(countries),
         }
 
         future = producer.send(TOPIC, purchase)

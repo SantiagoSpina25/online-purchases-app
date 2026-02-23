@@ -20,14 +20,27 @@ INDEX_NAME = "online-purchases"
 
 print("🟢 Consumer escuchando...")
 
-for msg in consumer:
+try:
 
-    purchase = msg.value  # dict ya parseado
-    # Indexamos en Elasticsearch
-    es.index(
-        index=INDEX_NAME, document=purchase
-    )  # 	Inserta cada compra en Elastic bajo el índice purchases
+    for msg in consumer:
 
-    order_id = purchase.get("order_id", "without_id")
+        purchase = msg.value  # dict ya parseado
 
-    print(f"✅ Insertado en ES: {order_id}")
+        if "country" not in purchase:
+            purchase["country"] = "Unknown"
+
+        # Indexamos en Elasticsearch
+        es.index(
+            index=INDEX_NAME, document=purchase
+        )  # 	Inserta cada compra en Elastic bajo el índice purchases
+
+        order_id = purchase.get("order_id", "without_id")
+
+        print(f"✅ Insertado en ES: {order_id}")
+
+except KeyboardInterrupt:
+    print("🛑 Stopping consumer...")
+
+finally:
+    consumer.close()
+    print("✅ Consumer closed cleanly")
