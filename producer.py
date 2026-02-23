@@ -3,9 +3,15 @@ import random
 import time
 import uuid
 from datetime import datetime, timezone
+from logger_config import setup_logger
+
 
 from kafka import KafkaProducer
 from kafka.errors import KafkaError
+
+
+logger = setup_logger("producer")
+
 
 TOPIC = "online_purchases"
 
@@ -78,7 +84,7 @@ countries = [
     "NZL",  # New Zealand
 ]
 
-print("🚀 Producer started")
+logger.info("🚀 Producer started")
 
 try:
     while True:
@@ -99,20 +105,20 @@ try:
 
         try:
             record_metadata = future.get(timeout=10)
-            print(
+            logger.info(
                 f"🛒 Sent → topic={record_metadata.topic} "
                 f"partition={record_metadata.partition} "
                 f"offset={record_metadata.offset}"  # offset: número de posición de un mensaje dentro de un topic
             )
         except KafkaError as e:
-            print(f"❌ Error sending message: {e}")
+            logger.error(f"❌ Error sending message: {e}")
 
         time.sleep(random.randint(1, 3))
 
 except KeyboardInterrupt:
-    print("🛑 Stopping producer...")
+    logger.info("🛑 Stopping producer...")
 
 finally:
     producer.flush()  # fuerza al producer a enviar todo lo que está en memoria antes de continuar
     producer.close()
-    print("✅ Producer closed cleanly")
+    logger.info("✅ Producer closed cleanly")

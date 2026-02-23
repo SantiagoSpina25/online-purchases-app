@@ -2,6 +2,10 @@ from kafka import KafkaConsumer
 from elasticsearch import Elasticsearch
 import json
 
+from logger_config import setup_logger
+
+logger = setup_logger("consumer")
+
 # Configuración de Kafka
 consumer = KafkaConsumer(
     "online_purchases",
@@ -20,7 +24,7 @@ INDEX_NAME = "online-purchases"
 
 required_fields = ["order_id", "product", "category", "price", "quantity", "timestamp"]
 
-print("🟢 Consumer escuchando...")
+logger.info("🟢 Consumer listening...")
 
 try:
 
@@ -41,11 +45,11 @@ try:
 
         order_id = purchase.get("order_id", "without_id")
 
-        print(f"✅ Insertado en ES: {order_id}")
+        logger.info(f"✅ Inserted in elastic: {order_id}")
 
 except KeyboardInterrupt:
-    print("🛑 Stopping consumer...")
+    logger.info("🛑 Stopping consumer...")
 
 finally:
     consumer.close()
-    print("✅ Consumer closed cleanly")
+    logger.info("✅ Consumer closed cleanly")
