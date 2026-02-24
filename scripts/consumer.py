@@ -2,7 +2,7 @@ from kafka import KafkaConsumer
 from elasticsearch import Elasticsearch
 import json
 
-from logger_config import setup_logger
+from logs.logger_config import setup_logger
 
 logger = setup_logger("consumer")
 
