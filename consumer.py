@@ -38,12 +38,12 @@ try:
         if "country" not in purchase:
             purchase["country"] = "Unknown"
 
-        # Indexamos en Elasticsearch
-        es.index(
-            index=INDEX_NAME, document=purchase
-        )  # 	Inserta cada compra en Elastic bajo el índice purchases
+        # 	Inserta cada compra en Elastic bajo el índice purchases
+        es.index(index=INDEX_NAME, document=purchase)
 
-        order_id = purchase.get("order_id", "without_id")
+        order_id = purchase.get(
+            "order_id", "without_id"
+        )  # Esto es por si llega un documento que no tenga order_id
 
         logger.info(f"✅ Inserted in elastic: {order_id}")
 
