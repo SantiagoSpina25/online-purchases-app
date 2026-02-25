@@ -12,7 +12,7 @@ from consumer_batch import run_consumer_batch
 with DAG(
     dag_id="consumer_dag",
     start_date=datetime(2026, 2, 25),
-    schedule_interval=None,  # manual trigger
+    schedule_interval="*/5 * * * *",
     catchup=False,
 ) as dag:
 

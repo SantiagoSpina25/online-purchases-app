@@ -113,7 +113,7 @@ try:
         except KafkaError as e:
             logger.error(f"❌ Error sending message: {e}")
 
-        time.sleep(random.randint(1, 3))
+        time.sleep(random.randint(1, 2))
 
 except KeyboardInterrupt:
     logger.info("🛑 Stopping producer...")

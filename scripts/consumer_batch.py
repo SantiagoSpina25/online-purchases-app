@@ -8,7 +8,6 @@ from logger_config import setup_logger
 def run_consumer_batch():
     logger = setup_logger("consumer_batch")
 
-    # Detectar entorno (Airflow vs local)
     BROKER = "kafka:9092"
     ELASTIC = "http://elasticsearch:9200"
 
@@ -27,8 +26,8 @@ def run_consumer_batch():
 
     logger.info("🟢 Consumer batch started")
 
-    # Solo leer 5 mensajes
-    MAX_MESSAGES = 5
+    # Solo leer 120 mensajes
+    MAX_MESSAGES = 120
     count = 0
 
     for msg in consumer:
