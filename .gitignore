@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.sqlite3
+
+# Virtual environments
+venv/
+.env
+env/
+
+# Logs
+logs/
+*.log
+
+# IDEs
+.vscode/
+.idea/
+
+# Docker
+docker-compose.override.yml
+*.env
+*.pid
+docker/data/
+docker/tmp/
+
+# Byte-compiled / cache / temp files
+*.swp
+*.swo
+*.DS_Store
+*.bak
+*.tmp
+
+# Airflow
+airflow.db
+*.airflowignore
+*.zip
