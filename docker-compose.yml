@@ -16,12 +16,15 @@ services:
 
     ports:
       - "9092:9092"
+      - "29092:29092"
     environment:
       KAFKA_BROKER_ID: 1
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
 
-      KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092
-      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092
+      KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092,PLAINTEXT_HOST://0.0.0.0:29092
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092,PLAINTEXT_HOST://localhost:29092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
 
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
       KAFKA_AUTO_CREATE_TOPICS_ENABLE: "true"
@@ -59,6 +62,7 @@ services:
       - airflow_db:/var/lib/postgresql/data
 
   airflow-webserver:
+    build: .
     image: apache/airflow:2.8.1
     container_name: airflow-webserver-online-purchases
     depends_on:
@@ -81,6 +85,7 @@ services:
       bash -c " airflow db migrate && airflow users create -u admin -p admin -f Admin -l User -r Admin -e admin@example.com && airflow webserver "
 
   airflow-scheduler:
+    build: .
     image: apache/airflow:2.8.1
     container_name: airflow-scheduler-online-purchases
     depends_on:

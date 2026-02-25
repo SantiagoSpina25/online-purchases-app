@@ -17,7 +17,7 @@ TOPIC = "online_purchases"
 
 # Configuración de Kafka
 producer = KafkaProducer(
-    bootstrap_servers="localhost:9092",
+    bootstrap_servers="localhost:29092",
     value_serializer=lambda v: json.dumps(v).encode(
         "utf-8"
     ),  # Convierte el diccionario de Python en bytes de JSON, que Kafka puede enviar

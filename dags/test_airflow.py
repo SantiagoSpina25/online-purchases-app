@@ -8,6 +8,7 @@ with DAG(
     schedule_interval=None,
     catchup=False,
 ) as dag:
-    test_task = BashOperator(
-        task_id="test_bash", bash_command="echo 'Airflow running correctly'"
+    test_script = BashOperator(
+        task_id="run_test_script",
+        bash_command="python /opt/airflow/scripts/test_script.py",
     )
