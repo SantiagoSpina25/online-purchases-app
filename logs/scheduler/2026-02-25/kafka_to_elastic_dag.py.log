@@ -1,0 +1,812 @@
+[2026-02-25T07:30:33.448+0000] {processor.py:161} INFO - Started process (PID=166) to work on /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:30:33.453+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_to_elastic_dag.py for tasks to queue
+[2026-02-25T07:30:33.455+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:30:33.454+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:30:33.485+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:30:33.475+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/kafka_to_elastic_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/kafka_to_elastic_dag.py", line 5, in <module>
+    with DAG(
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2026-02-25T07:30:33.492+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:30:33.572+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_to_elastic_dag.py took 0.128 seconds
+[2026-02-25T07:31:03.745+0000] {processor.py:161} INFO - Started process (PID=172) to work on /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:31:03.750+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_to_elastic_dag.py for tasks to queue
+[2026-02-25T07:31:03.753+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:31:03.752+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:31:03.782+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:31:03.772+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/kafka_to_elastic_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/kafka_to_elastic_dag.py", line 5, in <module>
+    with DAG(
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2026-02-25T07:31:03.786+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:31:03.856+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_to_elastic_dag.py took 0.120 seconds
+[2026-02-25T07:31:34.014+0000] {processor.py:161} INFO - Started process (PID=177) to work on /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:31:34.015+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_to_elastic_dag.py for tasks to queue
+[2026-02-25T07:31:34.016+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:31:34.016+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:31:34.028+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:31:34.025+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/kafka_to_elastic_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/kafka_to_elastic_dag.py", line 5, in <module>
+    with DAG(
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2026-02-25T07:31:34.029+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:31:34.051+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_to_elastic_dag.py took 0.040 seconds
+[2026-02-25T07:32:04.256+0000] {processor.py:161} INFO - Started process (PID=182) to work on /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:32:04.257+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_to_elastic_dag.py for tasks to queue
+[2026-02-25T07:32:04.258+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:32:04.258+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:32:04.272+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:32:04.269+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/kafka_to_elastic_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/kafka_to_elastic_dag.py", line 5, in <module>
+    with DAG(
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2026-02-25T07:32:04.273+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:32:04.297+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_to_elastic_dag.py took 0.044 seconds
+[2026-02-25T07:32:34.487+0000] {processor.py:161} INFO - Started process (PID=187) to work on /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:32:34.488+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_to_elastic_dag.py for tasks to queue
+[2026-02-25T07:32:34.489+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:32:34.489+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:32:34.503+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:32:34.499+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/kafka_to_elastic_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/kafka_to_elastic_dag.py", line 5, in <module>
+    with DAG(
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2026-02-25T07:32:34.504+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:32:34.529+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_to_elastic_dag.py took 0.046 seconds
+[2026-02-25T07:33:04.740+0000] {processor.py:161} INFO - Started process (PID=192) to work on /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:33:04.741+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_to_elastic_dag.py for tasks to queue
+[2026-02-25T07:33:04.742+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:33:04.742+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:33:04.755+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:33:04.752+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/kafka_to_elastic_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/kafka_to_elastic_dag.py", line 5, in <module>
+    with DAG(
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2026-02-25T07:33:04.756+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:33:04.783+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_to_elastic_dag.py took 0.046 seconds
+[2026-02-25T07:33:34.965+0000] {processor.py:161} INFO - Started process (PID=197) to work on /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:33:34.966+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_to_elastic_dag.py for tasks to queue
+[2026-02-25T07:33:34.967+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:33:34.967+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:33:34.981+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:33:34.978+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/kafka_to_elastic_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/kafka_to_elastic_dag.py", line 5, in <module>
+    with DAG(
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2026-02-25T07:33:34.982+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:33:35.006+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_to_elastic_dag.py took 0.045 seconds
+[2026-02-25T07:34:05.228+0000] {processor.py:161} INFO - Started process (PID=202) to work on /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:34:05.229+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_to_elastic_dag.py for tasks to queue
+[2026-02-25T07:34:05.230+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:34:05.230+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:34:05.245+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:34:05.241+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/kafka_to_elastic_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/kafka_to_elastic_dag.py", line 5, in <module>
+    with DAG(
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2026-02-25T07:34:05.246+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:34:05.272+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_to_elastic_dag.py took 0.047 seconds
+[2026-02-25T07:34:35.488+0000] {processor.py:161} INFO - Started process (PID=207) to work on /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:34:35.489+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_to_elastic_dag.py for tasks to queue
+[2026-02-25T07:34:35.490+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:34:35.490+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:34:35.510+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:34:35.504+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/kafka_to_elastic_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/kafka_to_elastic_dag.py", line 5, in <module>
+    with DAG(
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2026-02-25T07:34:35.511+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:34:35.540+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_to_elastic_dag.py took 0.055 seconds
+[2026-02-25T07:35:05.731+0000] {processor.py:161} INFO - Started process (PID=212) to work on /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:35:05.732+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_to_elastic_dag.py for tasks to queue
+[2026-02-25T07:35:05.733+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:35:05.733+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:35:05.756+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:35:05.749+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/kafka_to_elastic_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/kafka_to_elastic_dag.py", line 5, in <module>
+    with DAG(
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2026-02-25T07:35:05.757+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:35:05.806+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_to_elastic_dag.py took 0.079 seconds
+[2026-02-25T07:35:36.028+0000] {processor.py:161} INFO - Started process (PID=217) to work on /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:35:36.029+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_to_elastic_dag.py for tasks to queue
+[2026-02-25T07:35:36.030+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:35:36.030+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:35:36.042+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:35:36.039+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/kafka_to_elastic_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/kafka_to_elastic_dag.py", line 5, in <module>
+    with DAG(
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2026-02-25T07:35:36.043+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:35:36.068+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_to_elastic_dag.py took 0.042 seconds
+[2026-02-25T07:36:06.259+0000] {processor.py:161} INFO - Started process (PID=222) to work on /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:36:06.260+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_to_elastic_dag.py for tasks to queue
+[2026-02-25T07:36:06.261+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:36:06.261+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:36:06.277+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:36:06.273+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/kafka_to_elastic_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/kafka_to_elastic_dag.py", line 5, in <module>
+    with DAG(
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2026-02-25T07:36:06.278+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:36:06.306+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_to_elastic_dag.py took 0.051 seconds
+[2026-02-25T07:36:36.509+0000] {processor.py:161} INFO - Started process (PID=227) to work on /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:36:36.510+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_to_elastic_dag.py for tasks to queue
+[2026-02-25T07:36:36.512+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:36:36.511+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:36:36.532+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:36:36.527+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/kafka_to_elastic_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/kafka_to_elastic_dag.py", line 5, in <module>
+    with DAG(
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2026-02-25T07:36:36.533+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:36:36.562+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_to_elastic_dag.py took 0.056 seconds
+[2026-02-25T07:50:04.548+0000] {processor.py:161} INFO - Started process (PID=167) to work on /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:50:04.551+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_to_elastic_dag.py for tasks to queue
+[2026-02-25T07:50:04.553+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:50:04.552+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:50:04.581+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:50:04.574+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/kafka_to_elastic_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/kafka_to_elastic_dag.py", line 5, in <module>
+    with DAG(
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2026-02-25T07:50:04.582+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:50:04.633+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_to_elastic_dag.py took 0.094 seconds
+[2026-02-25T07:50:34.857+0000] {processor.py:161} INFO - Started process (PID=172) to work on /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:50:34.860+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_to_elastic_dag.py for tasks to queue
+[2026-02-25T07:50:34.862+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:50:34.861+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:50:34.893+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:50:34.888+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/kafka_to_elastic_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/kafka_to_elastic_dag.py", line 5, in <module>
+    with DAG(
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2026-02-25T07:50:34.895+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:50:34.929+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_to_elastic_dag.py took 0.080 seconds
+[2026-02-25T07:51:05.129+0000] {processor.py:161} INFO - Started process (PID=177) to work on /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:51:05.130+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_to_elastic_dag.py for tasks to queue
+[2026-02-25T07:51:05.131+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:51:05.131+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:51:05.145+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:51:05.142+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/kafka_to_elastic_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/kafka_to_elastic_dag.py", line 5, in <module>
+    with DAG(
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2026-02-25T07:51:05.146+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:51:05.169+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_to_elastic_dag.py took 0.043 seconds
+[2026-02-25T07:51:35.381+0000] {processor.py:161} INFO - Started process (PID=182) to work on /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:51:35.382+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_to_elastic_dag.py for tasks to queue
+[2026-02-25T07:51:35.384+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:51:35.383+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:51:35.410+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:51:35.404+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/kafka_to_elastic_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/kafka_to_elastic_dag.py", line 5, in <module>
+    with DAG(
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2026-02-25T07:51:35.412+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:51:35.448+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_to_elastic_dag.py took 0.071 seconds
+[2026-02-25T07:52:05.601+0000] {processor.py:161} INFO - Started process (PID=187) to work on /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:52:05.603+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_to_elastic_dag.py for tasks to queue
+[2026-02-25T07:52:05.604+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:52:05.603+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:52:05.618+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:52:05.614+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/kafka_to_elastic_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/kafka_to_elastic_dag.py", line 5, in <module>
+    with DAG(
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2026-02-25T07:52:05.619+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:52:05.645+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_to_elastic_dag.py took 0.048 seconds
+[2026-02-25T07:52:35.875+0000] {processor.py:161} INFO - Started process (PID=192) to work on /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:52:35.876+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_to_elastic_dag.py for tasks to queue
+[2026-02-25T07:52:35.877+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:52:35.877+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:52:35.893+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:52:35.889+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/kafka_to_elastic_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/kafka_to_elastic_dag.py", line 5, in <module>
+    with DAG(
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2026-02-25T07:52:35.894+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:52:35.924+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_to_elastic_dag.py took 0.051 seconds
+[2026-02-25T07:53:06.113+0000] {processor.py:161} INFO - Started process (PID=197) to work on /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:53:06.114+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_to_elastic_dag.py for tasks to queue
+[2026-02-25T07:53:06.115+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:53:06.115+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:53:06.131+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:53:06.127+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/kafka_to_elastic_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/kafka_to_elastic_dag.py", line 5, in <module>
+    with DAG(
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2026-02-25T07:53:06.132+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:53:06.155+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_to_elastic_dag.py took 0.045 seconds
+[2026-02-25T07:53:36.391+0000] {processor.py:161} INFO - Started process (PID=202) to work on /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:53:36.392+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_to_elastic_dag.py for tasks to queue
+[2026-02-25T07:53:36.393+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:53:36.393+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:53:36.408+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:53:36.405+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/kafka_to_elastic_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/kafka_to_elastic_dag.py", line 5, in <module>
+    with DAG(
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2026-02-25T07:53:36.409+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:53:36.432+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_to_elastic_dag.py took 0.044 seconds
+[2026-02-25T07:54:06.637+0000] {processor.py:161} INFO - Started process (PID=207) to work on /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:54:06.638+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_to_elastic_dag.py for tasks to queue
+[2026-02-25T07:54:06.639+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:54:06.639+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:54:06.665+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:54:06.658+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/kafka_to_elastic_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/kafka_to_elastic_dag.py", line 5, in <module>
+    with DAG(
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2026-02-25T07:54:06.668+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:54:06.693+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_to_elastic_dag.py took 0.059 seconds
+[2026-02-25T07:54:36.932+0000] {processor.py:161} INFO - Started process (PID=212) to work on /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:54:36.934+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_to_elastic_dag.py for tasks to queue
+[2026-02-25T07:54:36.938+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:54:36.937+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:54:36.998+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:54:36.987+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/kafka_to_elastic_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/kafka_to_elastic_dag.py", line 5, in <module>
+    with DAG(
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2026-02-25T07:54:37.001+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:54:37.045+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_to_elastic_dag.py took 0.118 seconds
+[2026-02-25T07:55:07.199+0000] {processor.py:161} INFO - Started process (PID=217) to work on /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:55:07.202+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_to_elastic_dag.py for tasks to queue
+[2026-02-25T07:55:07.203+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:55:07.203+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:55:07.222+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:55:07.217+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/kafka_to_elastic_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/kafka_to_elastic_dag.py", line 5, in <module>
+    with DAG(
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2026-02-25T07:55:07.224+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:55:07.251+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_to_elastic_dag.py took 0.057 seconds
+[2026-02-25T07:55:37.508+0000] {processor.py:161} INFO - Started process (PID=222) to work on /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:55:37.509+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_to_elastic_dag.py for tasks to queue
+[2026-02-25T07:55:37.511+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:55:37.510+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:55:37.536+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:55:37.530+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/kafka_to_elastic_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/kafka_to_elastic_dag.py", line 5, in <module>
+    with DAG(
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2026-02-25T07:55:37.538+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:55:37.571+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_to_elastic_dag.py took 0.066 seconds
+[2026-02-25T07:56:07.761+0000] {processor.py:161} INFO - Started process (PID=227) to work on /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:56:07.763+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_to_elastic_dag.py for tasks to queue
+[2026-02-25T07:56:07.764+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:56:07.764+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:56:07.782+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:56:07.778+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/kafka_to_elastic_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/kafka_to_elastic_dag.py", line 5, in <module>
+    with DAG(
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2026-02-25T07:56:07.785+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:56:07.814+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_to_elastic_dag.py took 0.057 seconds
+[2026-02-25T07:56:38.002+0000] {processor.py:161} INFO - Started process (PID=232) to work on /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:56:38.003+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_to_elastic_dag.py for tasks to queue
+[2026-02-25T07:56:38.004+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:56:38.004+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:56:38.019+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:56:38.015+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/kafka_to_elastic_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/kafka_to_elastic_dag.py", line 5, in <module>
+    with DAG(
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2026-02-25T07:56:38.020+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:56:38.047+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_to_elastic_dag.py took 0.049 seconds
+[2026-02-25T07:57:08.238+0000] {processor.py:161} INFO - Started process (PID=237) to work on /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:57:08.239+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_to_elastic_dag.py for tasks to queue
+[2026-02-25T07:57:08.240+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:57:08.240+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:57:08.254+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:57:08.250+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/kafka_to_elastic_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/kafka_to_elastic_dag.py", line 5, in <module>
+    with DAG(
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2026-02-25T07:57:08.255+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:57:08.280+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_to_elastic_dag.py took 0.046 seconds
+[2026-02-25T07:57:38.451+0000] {processor.py:161} INFO - Started process (PID=242) to work on /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:57:38.452+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_to_elastic_dag.py for tasks to queue
+[2026-02-25T07:57:38.453+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:57:38.453+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:57:38.468+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:57:38.464+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/kafka_to_elastic_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/kafka_to_elastic_dag.py", line 5, in <module>
+    with DAG(
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2026-02-25T07:57:38.469+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:57:38.496+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_to_elastic_dag.py took 0.049 seconds
+[2026-02-25T07:58:08.691+0000] {processor.py:161} INFO - Started process (PID=247) to work on /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:58:08.692+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_to_elastic_dag.py for tasks to queue
+[2026-02-25T07:58:08.693+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:58:08.693+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:58:08.709+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:58:08.706+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/kafka_to_elastic_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/kafka_to_elastic_dag.py", line 5, in <module>
+    with DAG(
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2026-02-25T07:58:08.710+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:58:08.739+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_to_elastic_dag.py took 0.052 seconds
+[2026-02-25T07:58:52.487+0000] {processor.py:161} INFO - Started process (PID=167) to work on /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:58:52.489+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_to_elastic_dag.py for tasks to queue
+[2026-02-25T07:58:52.492+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:58:52.491+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:58:52.520+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:58:52.511+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/kafka_to_elastic_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/kafka_to_elastic_dag.py", line 5, in <module>
+    with DAG(
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2026-02-25T07:58:52.521+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:58:52.565+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_to_elastic_dag.py took 0.084 seconds
+[2026-02-25T07:59:22.805+0000] {processor.py:161} INFO - Started process (PID=172) to work on /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:59:22.806+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_to_elastic_dag.py for tasks to queue
+[2026-02-25T07:59:22.807+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:59:22.806+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:59:22.820+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:59:22.817+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/kafka_to_elastic_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/kafka_to_elastic_dag.py", line 5, in <module>
+    with DAG(
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2026-02-25T07:59:22.821+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:59:22.850+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_to_elastic_dag.py took 0.049 seconds
+[2026-02-25T07:59:53.048+0000] {processor.py:161} INFO - Started process (PID=177) to work on /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:59:53.049+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_to_elastic_dag.py for tasks to queue
+[2026-02-25T07:59:53.050+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:59:53.050+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:59:53.064+0000] {logging_mixin.py:188} INFO - [2026-02-25T07:59:53.060+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/kafka_to_elastic_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/kafka_to_elastic_dag.py", line 5, in <module>
+    with DAG(
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2026-02-25T07:59:53.065+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T07:59:53.092+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_to_elastic_dag.py took 0.047 seconds
+[2026-02-25T08:01:05.489+0000] {processor.py:161} INFO - Started process (PID=167) to work on /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:01:05.492+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_to_elastic_dag.py for tasks to queue
+[2026-02-25T08:01:05.494+0000] {logging_mixin.py:188} INFO - [2026-02-25T08:01:05.493+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:01:05.521+0000] {logging_mixin.py:188} INFO - [2026-02-25T08:01:05.514+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/kafka_to_elastic_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/kafka_to_elastic_dag.py", line 5, in <module>
+    with DAG(
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2026-02-25T08:01:05.523+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:01:05.567+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_to_elastic_dag.py took 0.083 seconds
+[2026-02-25T08:01:35.804+0000] {processor.py:161} INFO - Started process (PID=172) to work on /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:01:35.805+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_to_elastic_dag.py for tasks to queue
+[2026-02-25T08:01:35.806+0000] {logging_mixin.py:188} INFO - [2026-02-25T08:01:35.806+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:01:35.821+0000] {logging_mixin.py:188} INFO - [2026-02-25T08:01:35.817+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/kafka_to_elastic_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/kafka_to_elastic_dag.py", line 5, in <module>
+    with DAG(
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2026-02-25T08:01:35.822+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:01:35.851+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_to_elastic_dag.py took 0.051 seconds
+[2026-02-25T08:02:06.055+0000] {processor.py:161} INFO - Started process (PID=177) to work on /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:02:06.056+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_to_elastic_dag.py for tasks to queue
+[2026-02-25T08:02:06.057+0000] {logging_mixin.py:188} INFO - [2026-02-25T08:02:06.056+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:02:06.072+0000] {logging_mixin.py:188} INFO - [2026-02-25T08:02:06.067+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/kafka_to_elastic_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/kafka_to_elastic_dag.py", line 5, in <module>
+    with DAG(
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2026-02-25T08:02:06.073+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:02:06.099+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_to_elastic_dag.py took 0.047 seconds
+[2026-02-25T08:02:36.298+0000] {processor.py:161} INFO - Started process (PID=182) to work on /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:02:36.299+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_to_elastic_dag.py for tasks to queue
+[2026-02-25T08:02:36.300+0000] {logging_mixin.py:188} INFO - [2026-02-25T08:02:36.300+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:02:36.313+0000] {logging_mixin.py:188} INFO - [2026-02-25T08:02:36.310+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/kafka_to_elastic_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/kafka_to_elastic_dag.py", line 5, in <module>
+    with DAG(
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2026-02-25T08:02:36.314+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:02:36.339+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_to_elastic_dag.py took 0.043 seconds
+[2026-02-25T08:03:06.515+0000] {processor.py:161} INFO - Started process (PID=187) to work on /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:03:06.516+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_to_elastic_dag.py for tasks to queue
+[2026-02-25T08:03:06.518+0000] {logging_mixin.py:188} INFO - [2026-02-25T08:03:06.517+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:03:06.531+0000] {logging_mixin.py:188} INFO - [2026-02-25T08:03:06.527+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/kafka_to_elastic_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/kafka_to_elastic_dag.py", line 5, in <module>
+    with DAG(
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2026-02-25T08:03:06.532+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:03:06.559+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_to_elastic_dag.py took 0.048 seconds
+[2026-02-25T08:03:36.752+0000] {processor.py:161} INFO - Started process (PID=192) to work on /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:03:36.753+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_to_elastic_dag.py for tasks to queue
+[2026-02-25T08:03:36.754+0000] {logging_mixin.py:188} INFO - [2026-02-25T08:03:36.754+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:03:36.768+0000] {logging_mixin.py:188} INFO - [2026-02-25T08:03:36.764+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/kafka_to_elastic_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/kafka_to_elastic_dag.py", line 5, in <module>
+    with DAG(
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2026-02-25T08:03:36.769+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:03:36.795+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_to_elastic_dag.py took 0.045 seconds
+[2026-02-25T08:04:06.978+0000] {processor.py:161} INFO - Started process (PID=197) to work on /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:04:06.979+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_to_elastic_dag.py for tasks to queue
+[2026-02-25T08:04:06.980+0000] {logging_mixin.py:188} INFO - [2026-02-25T08:04:06.980+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:04:06.999+0000] {logging_mixin.py:188} INFO - [2026-02-25T08:04:06.994+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/kafka_to_elastic_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/kafka_to_elastic_dag.py", line 5, in <module>
+    with DAG(
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2026-02-25T08:04:07.000+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:04:07.031+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_to_elastic_dag.py took 0.057 seconds
+[2026-02-25T08:04:37.233+0000] {processor.py:161} INFO - Started process (PID=202) to work on /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:04:37.235+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_to_elastic_dag.py for tasks to queue
+[2026-02-25T08:04:37.237+0000] {logging_mixin.py:188} INFO - [2026-02-25T08:04:37.237+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:04:37.270+0000] {logging_mixin.py:188} INFO - [2026-02-25T08:04:37.263+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/kafka_to_elastic_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/kafka_to_elastic_dag.py", line 5, in <module>
+    with DAG(
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2026-02-25T08:04:37.272+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:04:37.334+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_to_elastic_dag.py took 0.108 seconds
+[2026-02-25T08:05:07.488+0000] {processor.py:161} INFO - Started process (PID=207) to work on /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:05:07.489+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_to_elastic_dag.py for tasks to queue
+[2026-02-25T08:05:07.490+0000] {logging_mixin.py:188} INFO - [2026-02-25T08:05:07.490+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:05:07.502+0000] {logging_mixin.py:188} INFO - [2026-02-25T08:05:07.499+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/kafka_to_elastic_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/kafka_to_elastic_dag.py", line 5, in <module>
+    with DAG(
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2026-02-25T08:05:07.503+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:05:07.529+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_to_elastic_dag.py took 0.045 seconds
+[2026-02-25T08:05:37.755+0000] {processor.py:161} INFO - Started process (PID=212) to work on /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:05:37.756+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_to_elastic_dag.py for tasks to queue
+[2026-02-25T08:05:37.757+0000] {logging_mixin.py:188} INFO - [2026-02-25T08:05:37.756+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:05:37.771+0000] {logging_mixin.py:188} INFO - [2026-02-25T08:05:37.768+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/kafka_to_elastic_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/kafka_to_elastic_dag.py", line 5, in <module>
+    with DAG(
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2026-02-25T08:05:37.772+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:05:37.798+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_to_elastic_dag.py took 0.046 seconds
+[2026-02-25T08:06:08.057+0000] {processor.py:161} INFO - Started process (PID=217) to work on /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:06:08.058+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_to_elastic_dag.py for tasks to queue
+[2026-02-25T08:06:08.060+0000] {logging_mixin.py:188} INFO - [2026-02-25T08:06:08.059+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:06:08.076+0000] {logging_mixin.py:188} INFO - [2026-02-25T08:06:08.073+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/kafka_to_elastic_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/kafka_to_elastic_dag.py", line 5, in <module>
+    with DAG(
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2026-02-25T08:06:08.078+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:06:08.104+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_to_elastic_dag.py took 0.051 seconds
+[2026-02-25T08:06:38.346+0000] {processor.py:161} INFO - Started process (PID=222) to work on /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:06:38.347+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_to_elastic_dag.py for tasks to queue
+[2026-02-25T08:06:38.348+0000] {logging_mixin.py:188} INFO - [2026-02-25T08:06:38.347+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:06:38.361+0000] {logging_mixin.py:188} INFO - [2026-02-25T08:06:38.357+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/kafka_to_elastic_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/kafka_to_elastic_dag.py", line 5, in <module>
+    with DAG(
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2026-02-25T08:06:38.362+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:06:38.389+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_to_elastic_dag.py took 0.047 seconds
+[2026-02-25T08:07:08.612+0000] {processor.py:161} INFO - Started process (PID=227) to work on /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:07:08.613+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_to_elastic_dag.py for tasks to queue
+[2026-02-25T08:07:08.614+0000] {logging_mixin.py:188} INFO - [2026-02-25T08:07:08.614+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:07:08.626+0000] {logging_mixin.py:188} INFO - [2026-02-25T08:07:08.623+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/kafka_to_elastic_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/kafka_to_elastic_dag.py", line 5, in <module>
+    with DAG(
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2026-02-25T08:07:08.627+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:07:08.651+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_to_elastic_dag.py took 0.042 seconds
+[2026-02-25T08:07:38.882+0000] {processor.py:161} INFO - Started process (PID=232) to work on /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:07:38.883+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_to_elastic_dag.py for tasks to queue
+[2026-02-25T08:07:38.884+0000] {logging_mixin.py:188} INFO - [2026-02-25T08:07:38.884+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:07:38.902+0000] {logging_mixin.py:188} INFO - [2026-02-25T08:07:38.898+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/kafka_to_elastic_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/kafka_to_elastic_dag.py", line 5, in <module>
+    with DAG(
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2026-02-25T08:07:38.903+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:07:38.930+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_to_elastic_dag.py took 0.052 seconds
+[2026-02-25T08:08:09.159+0000] {processor.py:161} INFO - Started process (PID=237) to work on /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:08:09.160+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_to_elastic_dag.py for tasks to queue
+[2026-02-25T08:08:09.161+0000] {logging_mixin.py:188} INFO - [2026-02-25T08:08:09.161+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:08:09.176+0000] {logging_mixin.py:188} INFO - [2026-02-25T08:08:09.172+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/kafka_to_elastic_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/kafka_to_elastic_dag.py", line 5, in <module>
+    with DAG(
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2026-02-25T08:08:09.176+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:08:09.202+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_to_elastic_dag.py took 0.046 seconds
+[2026-02-25T08:08:39.437+0000] {processor.py:161} INFO - Started process (PID=242) to work on /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:08:39.438+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_to_elastic_dag.py for tasks to queue
+[2026-02-25T08:08:39.439+0000] {logging_mixin.py:188} INFO - [2026-02-25T08:08:39.438+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:08:39.454+0000] {logging_mixin.py:188} INFO - [2026-02-25T08:08:39.450+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/kafka_to_elastic_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/kafka_to_elastic_dag.py", line 5, in <module>
+    with DAG(
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2026-02-25T08:08:39.455+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:08:39.481+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_to_elastic_dag.py took 0.049 seconds
+[2026-02-25T08:09:09.689+0000] {processor.py:161} INFO - Started process (PID=247) to work on /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:09:09.691+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_to_elastic_dag.py for tasks to queue
+[2026-02-25T08:09:09.693+0000] {logging_mixin.py:188} INFO - [2026-02-25T08:09:09.692+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:09:09.720+0000] {logging_mixin.py:188} INFO - [2026-02-25T08:09:09.713+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/kafka_to_elastic_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/kafka_to_elastic_dag.py", line 5, in <module>
+    with DAG(
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2026-02-25T08:09:09.722+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:09:09.753+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_to_elastic_dag.py took 0.072 seconds
+[2026-02-25T08:09:39.901+0000] {processor.py:161} INFO - Started process (PID=252) to work on /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:09:39.903+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_to_elastic_dag.py for tasks to queue
+[2026-02-25T08:09:39.905+0000] {logging_mixin.py:188} INFO - [2026-02-25T08:09:39.904+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:09:39.930+0000] {logging_mixin.py:188} INFO - [2026-02-25T08:09:39.926+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/kafka_to_elastic_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/kafka_to_elastic_dag.py", line 5, in <module>
+    with DAG(
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2026-02-25T08:09:39.931+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:09:39.965+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_to_elastic_dag.py took 0.067 seconds
+[2026-02-25T08:10:10.151+0000] {processor.py:161} INFO - Started process (PID=257) to work on /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:10:10.153+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_to_elastic_dag.py for tasks to queue
+[2026-02-25T08:10:10.155+0000] {logging_mixin.py:188} INFO - [2026-02-25T08:10:10.154+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:10:10.174+0000] {logging_mixin.py:188} INFO - [2026-02-25T08:10:10.169+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/kafka_to_elastic_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/kafka_to_elastic_dag.py", line 5, in <module>
+    with DAG(
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2026-02-25T08:10:10.175+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:10:10.207+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_to_elastic_dag.py took 0.063 seconds
+[2026-02-25T08:10:40.395+0000] {processor.py:161} INFO - Started process (PID=262) to work on /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:10:40.397+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_to_elastic_dag.py for tasks to queue
+[2026-02-25T08:10:40.398+0000] {logging_mixin.py:188} INFO - [2026-02-25T08:10:40.398+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:10:40.421+0000] {logging_mixin.py:188} INFO - [2026-02-25T08:10:40.415+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/kafka_to_elastic_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/kafka_to_elastic_dag.py", line 5, in <module>
+    with DAG(
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2026-02-25T08:10:40.423+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:10:40.456+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_to_elastic_dag.py took 0.064 seconds
+[2026-02-25T08:11:10.692+0000] {processor.py:161} INFO - Started process (PID=267) to work on /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:11:10.692+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_to_elastic_dag.py for tasks to queue
+[2026-02-25T08:11:10.693+0000] {logging_mixin.py:188} INFO - [2026-02-25T08:11:10.693+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:11:10.706+0000] {logging_mixin.py:188} INFO - [2026-02-25T08:11:10.703+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/kafka_to_elastic_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/kafka_to_elastic_dag.py", line 5, in <module>
+    with DAG(
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2026-02-25T08:11:10.707+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:11:10.732+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_to_elastic_dag.py took 0.043 seconds
+[2026-02-25T08:11:40.941+0000] {processor.py:161} INFO - Started process (PID=272) to work on /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:11:40.942+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_to_elastic_dag.py for tasks to queue
+[2026-02-25T08:11:40.943+0000] {logging_mixin.py:188} INFO - [2026-02-25T08:11:40.943+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:11:40.957+0000] {logging_mixin.py:188} INFO - [2026-02-25T08:11:40.954+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/kafka_to_elastic_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/kafka_to_elastic_dag.py", line 5, in <module>
+    with DAG(
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2026-02-25T08:11:40.958+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:11:40.984+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_to_elastic_dag.py took 0.047 seconds
+[2026-02-25T08:12:11.213+0000] {processor.py:161} INFO - Started process (PID=277) to work on /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:12:11.214+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_to_elastic_dag.py for tasks to queue
+[2026-02-25T08:12:11.215+0000] {logging_mixin.py:188} INFO - [2026-02-25T08:12:11.215+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:12:11.230+0000] {logging_mixin.py:188} INFO - [2026-02-25T08:12:11.227+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/kafka_to_elastic_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/kafka_to_elastic_dag.py", line 5, in <module>
+    with DAG(
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2026-02-25T08:12:11.231+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:12:11.258+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_to_elastic_dag.py took 0.049 seconds
+[2026-02-25T08:12:41.465+0000] {processor.py:161} INFO - Started process (PID=282) to work on /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:12:41.465+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_to_elastic_dag.py for tasks to queue
+[2026-02-25T08:12:41.467+0000] {logging_mixin.py:188} INFO - [2026-02-25T08:12:41.466+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:12:41.480+0000] {logging_mixin.py:188} INFO - [2026-02-25T08:12:41.477+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/kafka_to_elastic_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/kafka_to_elastic_dag.py", line 5, in <module>
+    with DAG(
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2026-02-25T08:12:41.481+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:12:41.507+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_to_elastic_dag.py took 0.046 seconds
+[2026-02-25T08:13:11.732+0000] {processor.py:161} INFO - Started process (PID=287) to work on /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:13:11.733+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_to_elastic_dag.py for tasks to queue
+[2026-02-25T08:13:11.734+0000] {logging_mixin.py:188} INFO - [2026-02-25T08:13:11.734+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:13:11.746+0000] {logging_mixin.py:188} INFO - [2026-02-25T08:13:11.743+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/kafka_to_elastic_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/kafka_to_elastic_dag.py", line 5, in <module>
+    with DAG(
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2026-02-25T08:13:11.746+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/kafka_to_elastic_dag.py
+[2026-02-25T08:13:11.772+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_to_elastic_dag.py took 0.044 seconds

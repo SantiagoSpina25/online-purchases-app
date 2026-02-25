@@ -3,7 +3,7 @@ import random
 import time
 import uuid
 from datetime import datetime, timezone
-from logs.logger_config import setup_logger
+from logger_config import setup_logger
 
 
 from kafka import KafkaProducer
