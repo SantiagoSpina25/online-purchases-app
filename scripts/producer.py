@@ -21,7 +21,7 @@ producer = KafkaProducer(
     value_serializer=lambda v: json.dumps(v).encode(
         "utf-8"
     ),  # Convierte el diccionario de Python en bytes de JSON, que Kafka puede enviar
-    acks="all",  # asegura que el mensaje llegó y fue replicado
+    acks="all",  # Espera confirmacion de todas las replicas (en este caso solo hay 1)
     retries=5,  # si falla el envío, reintenta hasta 5 veces antes de tirar error
     linger_ms=10,  # espera hasta 10 milisegundos para agrupar varios mensajes antes de enviarlos
 )
@@ -62,29 +62,29 @@ products = [
 ]
 
 countries = [
-    "ESP",  # Spain
-    "ARG",  # Argentina
-    "USA",  # United States
-    "BRA",  # Brazil
-    "FRA",  # France
-    "DEU",  # Germany
-    "ITA",  # Italy
-    "GBR",  # United Kingdom
-    "PRT",  # Portugal
-    "MEX",  # Mexico
-    "CHL",  # Chile
-    "COL",  # Colombia
-    "PER",  # Peru
-    "URY",  # Uruguay
-    "CAN",  # Canada
-    "JPN",  # Japan
-    "CHN",  # China
-    "KOR",  # South Korea
-    "AUS",  # Australia
-    "NZL",  # New Zealand
+    "ESP",
+    "ARG",
+    "USA",
+    "BRA",
+    "FRA",
+    "DEU",
+    "ITA",
+    "GBR",
+    "PRT",
+    "MEX",
+    "CHL",
+    "COL",
+    "PER",
+    "URY",
+    "CAN",
+    "JPN",
+    "CHN",
+    "KOR",
+    "AUS",
+    "NZL",
 ]
 
-logger.info("🚀 Producer started")
+logger.info("🟢 Producer started")
 
 try:
     while True:
@@ -121,4 +121,4 @@ except KeyboardInterrupt:
 finally:
     producer.flush()  # fuerza al producer a enviar todo lo que está en memoria antes de continuar
     producer.close()
-    logger.info("✅ Producer closed cleanly")
+    logger.info("🟢 Producer closed cleanly")

@@ -24,10 +24,10 @@ def run_consumer_batch():
     es = Elasticsearch(ELASTIC)
     INDEX_NAME = "online-purchases"
 
-    logger.info("🟢 Consumer batch started")
+    logger.info("🟢 Consumer started")
 
-    # Solo leer 120 mensajes
-    MAX_MESSAGES = 120
+    # Solo leer 200 mensajes
+    MAX_MESSAGES = 200
     count = 0
 
     for msg in consumer:
@@ -35,8 +35,9 @@ def run_consumer_batch():
         es.index(index=INDEX_NAME, document=purchase)
         logger.info(f"✅ Inserted in elastic: {purchase.get('order_id', 'no_id')}")
         count += 1
+        logger.info(f"Purchase number: {count}")
         if count >= MAX_MESSAGES:
             break
 
     consumer.close()
-    logger.info("✅ Consumer batch finished")
+    logger.info("🟢 Consumer finished")
