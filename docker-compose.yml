@@ -99,6 +99,18 @@ services:
       - ./logs:/opt/airflow/logs
     command: airflow scheduler
 
+  spark:
+    image: apache/spark:3.4.2
+    container_name: spark-online-purchases
+    depends_on:
+      - kafka
+    environment:
+      SPARK_HOME: /opt/spark
+      PATH: /opt/spark/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+
+    volumes:
+      - ./scripts:/opt/spark-apps
+
 volumes:
   airflow_db:
   elastic_data:
