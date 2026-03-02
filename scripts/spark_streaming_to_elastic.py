@@ -3,9 +3,11 @@ from pyspark.sql.functions import *
 from pyspark.sql.types import *
 
 # Crear sesión Spark
-spark = SparkSession.builder.appName(
-    "Spark Streaming - Elastic connection"
-).getOrCreate()
+spark = (
+    SparkSession.builder.appName("Spark Streaming - Elastic connection")
+    .config("spark.sql.session.timeZone", "Europe/Madrid")
+    .getOrCreate()
+)
 
 spark.sparkContext.setLogLevel("WARN")
 
@@ -19,6 +21,8 @@ schema = StructType(
         StructField("price", DoubleType()),
         StructField("quantity", IntegerType()),
         StructField("country", StringType()),
+        StructField("payment_method", StringType()),
+        StructField("device_type", StringType()),
     ]
 )
 
@@ -47,7 +51,21 @@ aggData = (
 # Escribir en Elasticsearch
 
 
-def write_to_es(batch_data, batch_id):
+def process_batch(batch_data, batch_id):
+
+    # Guarda en formato parquet particionado por año, mes, dia y hora
+    (
+        batch_data.write.mode("append")
+        .format("parquet")
+        .option("path", "/data/online_purchases")
+        .option("checkpointLocation", f"/tmp/spark-checkpoints/parquet/{batch_id}")
+        .partitionBy("year", "month", "day", "hour")
+        .save()
+    )
+
+    print(f"✅ Batch {batch_id} guardado en Parquet")
+
+    # Sube a elasticsearch
     (
         batch_data.write.format("org.elasticsearch.spark.sql")
         .option("es.nodes", "elasticsearch")
@@ -63,7 +81,7 @@ def write_to_es(batch_data, batch_id):
 
 query = (
     aggData.writeStream.outputMode("append")
-    .foreachBatch(write_to_es)
+    .foreachBatch(process_batch)
     .option("checkpointLocation", "/tmp/spark-checkpoints-online-purchases")
     .start()
 )

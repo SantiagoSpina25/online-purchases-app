@@ -36,3 +36,5 @@ docker/tmp/
 airflow.db
 *.airflowignore
 *.zip
+
+data/

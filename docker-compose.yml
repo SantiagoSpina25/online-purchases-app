@@ -110,6 +110,7 @@ services:
       PATH: /opt/spark/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
     volumes:
       - ./scripts:/opt/spark-apps
+      - ./data/online_purchases:/data/online_purchases
 
 volumes:
   airflow_db:
