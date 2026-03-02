@@ -84,6 +84,20 @@ countries = [
     "NZL",
 ]
 
+payment_methods = ["card", "card", "card", "card", "transfer", "transfer", "wallet"]
+
+device_types = [
+    "mobile",
+    "mobile",
+    "mobile",
+    "mobile",
+    "mobile",
+    "desktop",
+    "desktop",
+    "desktop",
+    "tablet",
+]
+
 logger.info("🟢 Producer started")
 
 try:
@@ -91,7 +105,7 @@ try:
         product, category, base_price = random.choice(products)
 
         purchase = {
-            "order_id": str(uuid.uuid4()),
+            "purchase_id": str(uuid.uuid4()),
             "timestamp": datetime.now(timezone.utc).isoformat(),
             "user_id": random.randint(1, 100),
             "product": product,
@@ -99,6 +113,8 @@ try:
             "price": round(base_price * random.uniform(0.5, 1.5), 2),
             "quantity": random.randint(1, 3),
             "country": random.choice(countries),
+            "payment_method": random.choice(payment_methods),
+            "device_type": random.choice(device_types),
         }
 
         future = producer.send(TOPIC, purchase)

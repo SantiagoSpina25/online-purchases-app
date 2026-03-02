@@ -104,10 +104,10 @@ services:
     container_name: spark-online-purchases
     depends_on:
       - kafka
+    command: tail -f /dev/null
     environment:
       SPARK_HOME: /opt/spark
       PATH: /opt/spark/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-
     volumes:
       - ./scripts:/opt/spark-apps
 

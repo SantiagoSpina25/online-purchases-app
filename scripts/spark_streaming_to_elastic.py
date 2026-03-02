@@ -2,8 +2,10 @@ from pyspark.sql import SparkSession
 from pyspark.sql.functions import *
 from pyspark.sql.types import *
 
-
-spark = SparkSession.builder.appName("Spark Streaming Test").getOrCreate()
+# Crear sesión Spark
+spark = SparkSession.builder.appName(
+    "Spark Streaming - Elastic connection"
+).getOrCreate()
 
 spark.sparkContext.setLogLevel("WARN")
 
@@ -20,7 +22,7 @@ schema = StructType(
     ]
 )
 
-raw = (
+rawData = (
     spark.readStream.format("kafka")
     .option("kafka.bootstrap.servers", "kafka:9092")
     .option("subscribe", "online_purchases")
@@ -29,8 +31,8 @@ raw = (
 )
 
 # Agrega los campos "total_amount", "year", "month", "month_string", "day", "hour", "day_of_week"
-parsed = (
-    raw.selectExpr("CAST(value AS STRING) AS json_str")
+aggData = (
+    rawData.selectExpr("CAST(value AS STRING) AS json_str")
     .select(from_json(col("json_str"), schema).alias("data"))
     .select("data.*")
     .withColumn("total_amount", round(expr("price * quantity"), 2))
@@ -42,11 +44,28 @@ parsed = (
     .withColumn("day_of_week", date_format("timestamp", "EEEE"))
 )
 
-# query = (
-#     parsed.writeStream.format("console")
-#     .outputMode("append")
-#     .option("truncate", False)
-#     .start()
-# )
+# Escribir en Elasticsearch
 
-# query.awaitTermination()
+
+def write_to_es(batch_data, batch_id):
+    (
+        batch_data.write.format("org.elasticsearch.spark.sql")
+        .option("es.nodes", "elasticsearch")
+        .option("es.port", "9200")
+        .option("es.nodes.wan.only", "true")
+        .option("es.resource", "online-purchases-parsed")
+        .option("es.mapping.id", "purchase_id")
+        .mode("append")
+        .save()
+    )
+    print(f"✅ Batch {batch_id} enviado a Elasticsearch")
+
+
+query = (
+    aggData.writeStream.outputMode("append")
+    .foreachBatch(write_to_es)
+    .option("checkpointLocation", "/tmp/spark-checkpoints-online-purchases")
+    .start()
+)
+
+query.awaitTermination()

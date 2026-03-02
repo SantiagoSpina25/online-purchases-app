@@ -33,7 +33,7 @@ def run_consumer_batch():
     for msg in consumer:
         purchase = msg.value
         es.index(index=INDEX_NAME, document=purchase)
-        logger.info(f"✅ Inserted in elastic: {purchase.get('order_id', 'no_id')}")
+        logger.info(f"✅ Inserted in elastic: {purchase.get('purchase_id', 'no_id')}")
         count += 1
         logger.info(f"Purchase number: {count}")
         if count >= MAX_MESSAGES:
