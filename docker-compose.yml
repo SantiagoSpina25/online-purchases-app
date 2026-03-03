@@ -75,6 +75,8 @@ services:
       AIRFLOW__CORE__FERNET_KEY: ""
       AIRFLOW__CORE__LOAD_EXAMPLES: "false"
       AIRFLOW__WEBSERVER__EXPOSE_CONFIG: "true"
+      STREAM_HEALTHCHECK_CMD: "test -f /opt/airflow/logs/stream_heartbeat && find /opt/airflow/logs/stream_heartbeat -mmin -10 | grep -q stream_heartbeat"
+      STREAM_RESTART_CMD: "echo 'TODO: set real restart command' && exit 1"
     volumes:
       - ./dags:/opt/airflow/dags
       - ./scripts:/opt/airflow/scripts
@@ -93,6 +95,8 @@ services:
     environment:
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+      STREAM_HEALTHCHECK_CMD: "test -f /opt/airflow/logs/stream_heartbeat && find /opt/airflow/logs/stream_heartbeat -mmin -5 | grep -q stream_heartbeat"
+      STREAM_RESTART_CMD: "echo 'TODO: set real restart command' && exit 1"
     volumes:
       - ./dags:/opt/airflow/dags
       - ./scripts:/opt/airflow/scripts
@@ -111,6 +115,7 @@ services:
     volumes:
       - ./scripts:/opt/spark-apps
       - ./data/online_purchases:/data/online_purchases
+      - ./logs:/opt/spark-logs
 
 volumes:
   airflow_db:

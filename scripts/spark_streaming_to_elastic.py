@@ -1,8 +1,19 @@
+from pathlib import Path
+
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import *
 from pyspark.sql.types import *
 
-# Crear sesión Spark
+
+HEARTBEAT_PATH = Path("/opt/spark-logs/stream_heartbeat")
+
+
+def write_heartbeat() -> None:
+    HEARTBEAT_PATH.parent.mkdir(parents=True, exist_ok=True)
+    HEARTBEAT_PATH.touch()
+
+
+# Crear sesion Spark
 spark = (
     SparkSession.builder.appName("Spark Streaming - Elastic connection")
     .config("spark.sql.session.timeZone", "Europe/Madrid")
@@ -48,12 +59,13 @@ aggData = (
     .withColumn("day_of_week", date_format("timestamp", "EEEE"))
 )
 
+
 # Escribir en Elasticsearch
-
-
 def process_batch(batch_data, batch_id):
+    # Genera una marca para que Airflow sepa que el stream sigue procesando
+    write_heartbeat()
 
-    # Guarda en formato parquet particionado por año, mes, dia y hora
+    # Guarda en formato parquet particionado por ano, mes, dia y hora
     (
         batch_data.write.mode("append")
         .format("parquet")
