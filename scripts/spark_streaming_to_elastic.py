@@ -5,10 +5,12 @@ from pyspark.sql.functions import *
 from pyspark.sql.types import *
 
 
+# Guarda la ruta del archivo stream_heartbeat
 HEARTBEAT_PATH = Path("/opt/spark-logs/stream_heartbeat")
 
 
-def write_heartbeat() -> None:
+# Funcion que asegura que la carpeta spark-logs exista y actualiza la fecha de modificacion del archivo para indicar que el proceso sigue vivo
+def write_heartbeat():
     HEARTBEAT_PATH.parent.mkdir(parents=True, exist_ok=True)
     HEARTBEAT_PATH.touch()
 

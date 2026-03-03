@@ -107,7 +107,7 @@ try:
         purchase = {
             "purchase_id": str(uuid.uuid4()),
             "timestamp": datetime.now(timezone.utc).isoformat(),
-            "user_id": random.randint(1, 100),
+            "user_id": random.randint(1, 10000),
             "product": product,
             "category": category,
             "price": round(base_price * random.uniform(0.5, 1.5), 2),
@@ -129,7 +129,7 @@ try:
         except KafkaError as e:
             logger.error(f"❌ Error sending message: {e}")
 
-        time.sleep(random.randint(1, 2))
+        time.sleep(random.randint(1, 10))
 
 except KeyboardInterrupt:
     logger.info("🛑 Stopping producer...")

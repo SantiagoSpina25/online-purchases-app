@@ -75,7 +75,7 @@ services:
       AIRFLOW__CORE__FERNET_KEY: ""
       AIRFLOW__CORE__LOAD_EXAMPLES: "false"
       AIRFLOW__WEBSERVER__EXPOSE_CONFIG: "true"
-      STREAM_HEALTHCHECK_CMD: "test -f /opt/airflow/logs/stream_heartbeat && find /opt/airflow/logs/stream_heartbeat -mmin -10 | grep -q stream_heartbeat"
+      STREAM_HEALTHCHECK_CMD: "test -f /opt/airflow/logs/stream_heartbeat && find /opt/airflow/logs/stream_heartbeat -mmin -5 | grep -q stream_heartbeat"
       STREAM_RESTART_CMD: "echo 'TODO: set real restart command' && exit 1"
     volumes:
       - ./dags:/opt/airflow/dags
@@ -116,6 +116,8 @@ services:
       - ./scripts:/opt/spark-apps
       - ./data/online_purchases:/data/online_purchases
       - ./logs:/opt/spark-logs
+    ports:
+      - "4040:4040"
 
 volumes:
   airflow_db:
