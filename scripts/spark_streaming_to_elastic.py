@@ -31,7 +31,7 @@ schema = StructType(
         StructField("user_id", StringType()),
         StructField("product", StringType()),
         StructField("category", StringType()),
-        StructField("price", DoubleType()),
+        StructField("price", StringType()),
         StructField("quantity", IntegerType()),
         StructField("country", StringType()),
         StructField("payment_method", StringType()),
@@ -52,13 +52,21 @@ aggData = (
     rawData.selectExpr("CAST(value AS STRING) AS json_str")
     .select(from_json(col("json_str"), schema).alias("data"))
     .select("data.*")
-    .withColumn("total_amount", round(expr("price * quantity"), 2))
     .withColumn("year", year("timestamp"))
     .withColumn("month", month("timestamp"))
     .withColumn("month_string", date_format("timestamp", "MMMM"))
     .withColumn("day", dayofmonth("timestamp"))
     .withColumn("hour", hour("timestamp"))
     .withColumn("day_of_week", date_format("timestamp", "EEEE"))
+)
+
+normalizedProducts = (
+    aggData.withColumn("product", trim(initcap(col("product"))))
+    .withColumn("category", trim(initcap(col("category"))))
+    .withColumn(
+        "price", round(trim(col("price")).cast("float") * (0.2 + rand() * 1.8), 2)
+    )
+    .withColumn("total_amount", round(expr("price * quantity"), 2))
 )
 
 
@@ -97,7 +105,7 @@ def process_batch(batch_data, batch_id):
 
 
 query = (
-    aggData.writeStream.outputMode("append")
+    normalizedProducts.writeStream.outputMode("append")
     .foreachBatch(process_batch)
     .option("checkpointLocation", "/tmp/spark-checkpoints-online-purchases")
     .start()
