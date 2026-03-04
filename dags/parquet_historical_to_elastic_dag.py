@@ -18,7 +18,7 @@ LOCAL_TZ = pendulum.timezone("Europe/Madrid")
 with DAG(
     dag_id="parquet_historical_to_elastic",
     start_date=datetime(2026, 3, 3, tzinfo=LOCAL_TZ),
-    schedule="0 23 * * *",
+    schedule="0 12 * * *",
     catchup=False,
     tags=["historical", "elasticsearch"],
 ) as dag:

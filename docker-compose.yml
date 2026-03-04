@@ -51,9 +51,11 @@ services:
       - elasticsearch
     environment:
       - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
-      - ELASTICSEARCH_SERVICEACCOUNTTOKEN=AAEAAWVsYXN0aWMva2liYW5hL2tpYmFuYS10b2tlbjpaem1maUxSM1RCbTVjLTBmNHRWSnBn
+      - ELASTICSEARCH_SERVICEACCOUNTTOKEN=AAEAAWVsYXN0aWMva2liYW5hL2tpYmFuYS10b2tlbjpoZmUxS3l4aVM0bXFtZVlWTWNBUWFR
     ports:
       - "5601:5601"
+    volumes:
+      - ./kibana-config/kibana.yml:/usr/share/kibana/config/kibana.yml:ro
 
   postgres:
     image: postgres:15
