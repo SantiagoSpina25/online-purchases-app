@@ -15,6 +15,11 @@ logger = setup_logger("producer")
 
 TOPIC = "online_purchases"
 
+# Constantes para controlar el tiempo de producción random
+FAST_PRODUCTION = 1
+SLOW_PRODUCTION = 10
+ULTRA_SLOW_PRODUCTION = 20
+
 # Configuración de Kafka
 producer = KafkaProducer(
     bootstrap_servers="localhost:29092",
@@ -124,7 +129,6 @@ try:
             "product": product,
             "category": category,
             "price": base_price,
-            # "price": round(base_price * random.uniform(0.5, 1.5), 2),
             "quantity": random.randint(1, 5),
             "country": random.choice(countries),
             "payment_method": random.choice(payment_methods),
@@ -143,7 +147,7 @@ try:
         except KafkaError as e:
             logger.error(f"❌ Error sending message: {e}")
 
-        time.sleep(random.randint(1, 10))
+        time.sleep(random.randint(1, ULTRA_SLOW_PRODUCTION))
 
 except KeyboardInterrupt:
     logger.info("🛑 Stopping producer...")
@@ -151,4 +155,4 @@ except KeyboardInterrupt:
 finally:
     producer.flush()  # fuerza al producer a enviar todo lo que está en memoria antes de continuar
     producer.close()
-    logger.info("🟢 Producer closed cleanly")
+    logger.info("🟢 Producer closed cleanly") 

@@ -1,5 +1,5 @@
 
-![Gráfico proyecto](<Grafico online-purchases v2.jpg>)
+![Gráfico proyecto](<Grafico online-purchases v3.jpg>)
 
 ## Ejecutar `spark_streaming_to_elastic.py`
 

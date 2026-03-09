@@ -52,21 +52,25 @@ aggData = (
     rawData.selectExpr("CAST(value AS STRING) AS json_str")
     .select(from_json(col("json_str"), schema).alias("data"))
     .select("data.*")
-    .withColumn("year", year("timestamp"))
-    .withColumn("month", month("timestamp"))
-    .withColumn("month_string", date_format("timestamp", "MMMM"))
-    .withColumn("day", dayofmonth("timestamp"))
-    .withColumn("hour", hour("timestamp"))
-    .withColumn("day_of_week", date_format("timestamp", "EEEE"))
+    .withColumns(
+        {
+            "year": year("timestamp"),
+            "month": month("timestamp"),
+            "month_string": date_format("timestamp", "MMMM"),
+            "day": dayofmonth("timestamp"),
+            "hour": hour("timestamp"),
+            "day_of_week": date_format("timestamp", "EEEE"),
+        }
+    )
 )
 
-normalizedProducts = (
-    aggData.withColumn("product", trim(initcap(col("product"))))
-    .withColumn("category", trim(initcap(col("category"))))
-    .withColumn(
-        "price", round(trim(col("price")).cast("float") * (0.2 + rand() * 1.8), 2)
-    )
-    .withColumn("total_amount", round(expr("price * quantity"), 2))
+normalizedProducts = aggData.withColumns(
+    {
+        "product": trim(initcap(col("product"))),
+        "category": trim(initcap(col("category"))),
+        "price": round(trim(col("price")).cast("float") * (0.2 + rand() * 1.8), 2),
+        "total_amount": round(expr("price * quantity"), 2),
+    }
 )
 
 
