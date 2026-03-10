@@ -77,6 +77,11 @@ products = [
     ("Electric Kettle", "Home appliances", 60.0),
     ("Hoodie", "Fashion", "50"),
     ("Running Shorts", "fashion", 30.0),
+    (None, "Electronics", 110),
+    ("Air Purifier", None, "200"),
+    (None, "Home appliances", 60.0),
+    ("Hoodie", None, "50"),
+    (None, "fashion", 30.0),
 ]
 
 countries = [
@@ -100,9 +105,19 @@ countries = [
     "KOR",
     "AUS",
     "NZL",
+    None,
 ]
 
-payment_methods = ["card", "card", "card", "card", "transfer", "transfer", "wallet"]
+payment_methods = [
+    "card",
+    "card",
+    "card",
+    "card",
+    "transfer",
+    "transfer",
+    "wallet",
+    None,
+]
 
 device_types = [
     "mobile",
@@ -114,6 +129,7 @@ device_types = [
     "desktop",
     "desktop",
     "tablet",
+    None,
 ]
 
 logger.info("🟢 Producer started")
@@ -155,4 +171,4 @@ except KeyboardInterrupt:
 finally:
     producer.flush()  # fuerza al producer a enviar todo lo que está en memoria antes de continuar
     producer.close()
-    logger.info("🟢 Producer closed cleanly") 
+    logger.info("🟢 Producer closed cleanly")

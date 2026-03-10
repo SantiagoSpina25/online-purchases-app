@@ -64,7 +64,11 @@ aggData = (
     )
 )
 
-normalizedProducts = aggData.withColumns(
+# Controla los campos nulos y los reemplaza por "Unknown"
+nullHandling = aggData.na.fill("Unknown")
+
+# Normalizando campos
+normalizedProducts = nullHandling.withColumns(
     {
         "product": trim(initcap(col("product"))),
         "category": trim(initcap(col("category"))),
